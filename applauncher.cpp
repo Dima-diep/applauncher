@@ -50,7 +50,7 @@ class Main {
 
 	public:
 		int main() {
-	    	if (std::filesystem::exists("app.conf") && std::filesystem::exists("run.conf")) {
+	    	if (file::exists("app.conf") && file::exists("run.conf")) {
     			unsigned int maxy, maxx;
 	    		vector<string> apps = getapps();
     			vector<string> runs = getexec();
