@@ -95,10 +95,10 @@ class Main {
     			waddch(win, '>');
     			wrefresh(win);
     			refresh();
+                        static unsigned int numapp = 1;
+    	                static unsigned int relapp = 1;
     			while (true) {
     				int key = getch();
-    				static unsigned int numapp = 1;
-    				static unsigned int relapp = 1;
     				if (key == KEY_UP) {
     				    if (relapp > 1) {
     				    	relapp--;
